@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <script></script>
+        <style>
+            body {
+                margin: 0;
+            }
+            .header {
+                display: flex;
+                width: 100%;
+                height: 50px;
+                background: rgb(230, 230, 230);
+            }
+            .header .left {
+                display: flex;
+                width: 50%;
+                height: 100%;
+            }
+            .header .right {
+                display: flex;
+                justify-content: flex-end;
+                width: 50%;
+                height: 100%;
+            }
+            #userStatusButton {
+                display: flex;
+                align-items: center;
+                width: auto;
+                height: 100%;
+                margin: 0 16px;
+            }
+            .popup {
+                position: fixed;
+            }
+            #userStatusWindow {
+                width: 250px;
+                height: 325px;
+                background: rgb(220, 249, 255);
+                border: 1px solid rgba(0, 0, 0, 0.26);
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left"></div>
+            <div class="right">
+                <div id="userStatusButton">ログイン</div>
+            </div>
+        </div>
+        <div id="userStatusWindow" class="popup" style="top: 0; left: 0"></div>
+    </body>
+</html>
